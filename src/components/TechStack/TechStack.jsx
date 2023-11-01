@@ -1,5 +1,6 @@
 import { Playfair_Display } from "next/font/google";
 import { FaReact } from "react-icons/fa";
+import Image from "next/image";
 const playFair = Playfair_Display({ subsets: ["latin"] });
 const LOGOS = [
   "HTML",
@@ -28,8 +29,8 @@ const TechStack = () => {
         React
       </a>
       <article className="flex flex-wrap gap-4 my-8">
-        {LOGOS.map((logo) => (
-          <img src={`/sliderImages/${logo}-logo.svg`} alt="" width={36} />
+        {LOGOS.map((logo, index) => (
+          <Image src={`/sliderImages/${logo}-logo.svg`} alt="" width={36} height={36} key={index}/>
         ))}
       </article>
     </section>

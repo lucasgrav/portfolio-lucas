@@ -1,12 +1,13 @@
 import { Playfair_Display } from "next/font/google";
-import { FaReact} from "react-icons/fa";
-import {GrNode} from "react-icons/gr";
+import { FaReact } from "react-icons/fa";
+import { GrNode } from "react-icons/gr";
+import Image from "next/image";
 const playFair = Playfair_Display({ subsets: ["latin"] });
 const AboutMe = () => {
   return (
     <section>
       <div className="flex items-center  mb-8 gap-2">
-        <img src="/images/logo-lucascorrea.svg" alt="" width={20} />
+        <Image src="/images/logo-lucascorrea.svg" alt="" width={20} height={20}/>
         <h1
           className={` ${playFair.className} font-semibold text-2xl tracking-tighter mb-1`}
         >
@@ -19,14 +20,14 @@ const AboutMe = () => {
         con experiencia en{" "}
         <span>
           <a className="border  border-neutral-700 mx-1  bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4  text-neutral-100 no-underline">
-            <FaReact className="mr-1"/>
+            <FaReact className="mr-1" />
             React
           </a>
         </span>{" "}
         y{" "}
         <span>
           <a className="border  border-neutral-700 mx-1 bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4  text-neutral-100 no-underline">
-          <GrNode className="mr-1 "/>
+            <GrNode className="mr-1 " />
             Node.js
           </a>
         </span>

@@ -1,5 +1,5 @@
 import { PiArrowUpRight} from "react-icons/pi";
-
+import Image from "next/image";
 const CardSocial = ({ name, social, img, link }) => {
   let linkedinLogo = img === "/images/photo-of-me.jpeg";
   return (
@@ -11,17 +11,19 @@ const CardSocial = ({ name, social, img, link }) => {
       <div className="flex items-center gap-4">
         {/* LOGO IMAGE */}
         <div className="relative h-16">
-          <img
+          <Image
             src={img}
             alt=""
             className="border border-neutral-700 rounded-full h-16 w-16 "
+            width={500}
+            height={500}
           />
           <div
             className={` ${
               linkedinLogo ? "" : "hidden"
             } border border-neutral-700 rounded-full bg-white inline-flex p-1 relative h-6 w-6 items-center -top-6 -right-10`}
           >
-            <img
+            <Image
               src="/images/logo-linkedin.png"
               alt=""
               width={15}

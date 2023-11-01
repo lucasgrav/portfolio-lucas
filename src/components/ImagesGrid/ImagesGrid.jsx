@@ -1,12 +1,25 @@
+import Image from "next/image";
 const ImagesGrid = () => {
   return (
     <div className="my-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
       <div className="">
-        <img src="/images/photo-of-nerdearla.jpeg" alt="" className="rounded-lg" />
+        <Image
+          src="/images/photo-of-nerdearla.jpeg"
+          alt=""
+          className="rounded-lg"
+          width={500}
+          height={500}
+        />
       </div>
-    
+
       <div>
-        <img src="/images/photo-with-midu.jpeg" alt="" className="rounded-lg" />
+        <Image
+          src="/images/photo-with-midu.jpeg"
+          alt=""
+          className="rounded-lg"
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );
