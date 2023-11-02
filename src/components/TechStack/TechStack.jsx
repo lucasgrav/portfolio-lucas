@@ -44,7 +44,7 @@ const TechStack = () => {
         {LOGOS.map((logo, index) => (
           <a
             key={index}
-            className="border  border-neutral-700 mx-1  font-thin bg-neutral-800 rounded p-2  inline-flex items-center leading-4  text-neutral-100 no-underline"
+            className=" mx-1  font-thin rounded p-2  inline-flex items-center leading-4  text-neutral-100 no-underline"
           >
             {logo.logo}
             <p className="truncate">{logo.name}</p>
