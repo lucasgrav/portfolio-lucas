@@ -32,11 +32,11 @@ const Footer = () => {
           ))}
         </div>
 
-        <a className="flex items-center gap-1 text-neutral-300 hover:text-neutral-200 cursor-pointer">
+        <a href="https://www.linkedin.com/in/lucasgastoncorrea/" target="_blank" className="flex items-center gap-1 text-neutral-300 hover:text-neutral-200 cursor-pointer">
           <PiArrowUpRight className="text-xl" />
           <p>linkedin</p>
         </a>
-        <a className="flex items-center gap-1 text-neutral-300 hover:text-neutral-200 cursor-pointer">
+        <a href="https://github.com/lucasgrav" target="_blank" className="flex items-center gap-1 text-neutral-300 hover:text-neutral-200 cursor-pointer">
           <PiArrowUpRight className="text-xl" />
           <p>github</p>
         </a>
