@@ -2,17 +2,30 @@
 import { Playfair_Display } from "next/font/google";
 import { useForm, ValidationError } from "@formspree/react";
 const playFair = Playfair_Display({ subsets: ["latin"] });
+import { motion } from "framer-motion";
 
 const FormContact = () => {
   const [state, handleSubmit] = useForm(`${process.env.NEXT_PUBLIC_FORM_KEY}`);
   if (state.succeeded) {
     return (
-      <div className="flex  justify-center items-center h-[280px] mt-4  ">
-        <p
+      <div className="flex  justify-center items-center h-[353px] mt-4 border-b  border-neutral-500">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 25,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.3,
+            delay: 0.3,
+          }}
           className={` ${playFair.className} font-semibold text-xl tracking-tighter mb-1`}
         >
           ¡Gracias por contactarte conmigo, en breve te respondere!
-        </p>
+        </motion.div>
       </div>
     );
   }
