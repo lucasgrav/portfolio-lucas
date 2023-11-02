@@ -25,7 +25,7 @@ const CardCertificate = ({ academy, time, month, about, link, img }) => {
             {academy}
           </h2>
           <p className="font-thin">{about}</p>
-          <p className="text-neutral-400">
+          <p className="text-neutral-400 text-sm">
             {time} Horas - {month}
           </p>
         </div>
