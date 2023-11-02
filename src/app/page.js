@@ -33,18 +33,33 @@ export default function Home() {
       <section className="my-8 flex flex-col gap-4 ">
         <CardCertificate
           academy={"Henry - Bootcamp"}
+          about={"Desarrollo Full Stack"}
           time={"800"}
           month={"Mayo - Agosto 2023"}
+          link={
+            "https://certificates.soyhenry.com/new-cert?id=35a905e847fd2d71fe8554b60bd10c9b2bfc810c78f7fa58314c53aeb1108ec1"
+          }
+          img={"/images/henry-logo.jpg"}
         />
         <CardCertificate
-          academy={"Coder House - JavaScript"}
+          academy={"Coder House"}
+          about={"JavaScript"}
           time={"39"}
           month={"Octubre 2022"}
+          link={
+            "https://www.coderhouse.com/certificados/636fa8ab9dfea6000e093180"
+          }
+          img={"/images/coderhouse-logo.png"}
         />
         <CardCertificate
-          academy={"Coder House - Desarrollo Web"}
+          academy={"Coder House"}
+          about={"Desarrollo Web"}
           time={"43"}
           month={"Julio 2022"}
+          link={
+            "https://www.coderhouse.com/certificados/62dc19572ac4fc001af17834"
+          }
+          img={"/images/coderhouse-logo.png"}
         />
       </section>
       <TechStack />
