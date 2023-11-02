@@ -3,9 +3,9 @@ import AboutMe from "@/components/AboutMe/AboutMe";
 import AboutMeSecond from "@/components/AboutMe/AboutMeSecond";
 import CardCertificate from "@/components/CardCertificate/CardCertificate";
 import CardSocial from "@/components/CardSocial/CardSocial";
+import Footer from "@/components/Footer/Footer";
 import ImagesGrid from "@/components/ImagesGrid/ImagesGrid";
 import TechStack from "@/components/TechStack/TechStack";
-
 
 export default function Home() {
   return (
@@ -27,9 +27,8 @@ export default function Home() {
           link={"https://github.com/lucasgrav"}
         />
       </section>
-      
+
       <AboutCertificates />
- 
 
       <section className="my-8 flex flex-col gap-4 ">
         <CardCertificate
@@ -48,8 +47,8 @@ export default function Home() {
           month={"Julio 2022"}
         />
       </section>
-            <TechStack />
-    
+      <TechStack />
+      <Footer />
     </main>
   );
 }
