@@ -10,6 +10,7 @@ const AboutProjects = () => {
           alt=""
           width={20}
           height={20}
+          className="w-[20px] h-[20px]"
         />
         <h1
           className={` ${playFair.className} font-semibold text-2xl tracking-tighter mb-1`}

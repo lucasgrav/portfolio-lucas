@@ -2,7 +2,7 @@ import AboutProjects from "@/components/AboutMe/AboutProjects";
 import CardProject from "@/components/CardProject/CardProject";
 import Footer from "@/components/Footer/Footer";
 
-export default function Home() {
+export default function Proyectos() {
   return (
     <main className="max-w-2xl  text-white px-2">
       <AboutProjects />

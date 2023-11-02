@@ -35,7 +35,7 @@ const CardProject = ({
           alt=""
           height={300}
           width={300}
-          className="rounded-lg mb-4"
+          className="rounded-lg mb-4 w-auto h-auto"
         />
       </a>
 
